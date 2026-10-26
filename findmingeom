@@ -31,6 +31,8 @@ if [ -n "$usestep" ]; then
     [ $usestep -eq 0 ] && lastgeom=true
 fi
 
+which dos2unix 2>/dev/null || alias dos2unix=d2us.sh
+
 ( $trajectory ) && ( $makehin ) && echo "Supported trajectory format is XYZ. Please remove either -t or -n option." && exit 1
 
 ( $helpme ) && echo "Usage: ./findmingeom [options] YOUR_GAUSSIAN_OUTPUT_FILE.out [FILE_TO_STORE_RESULTS]
