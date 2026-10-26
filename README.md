@@ -15,7 +15,7 @@ Different optimization subroutines are supported as well (analytical and numeric
 ## Requirements
 
 * **bash** (shell environment)
-* **`dos2unix`**: Utility tools for end-of-line conversion.
+* **`dos2unix`**: Utility tools for end-of-line conversion (extremely important, believe it or not).
 * **`gawk`** / **`awk`**: Used for text parsing and formatting.
 * **Open Babel (`obabel`)**: Required only when generating HyperChem (`.HIN`) files.
 
